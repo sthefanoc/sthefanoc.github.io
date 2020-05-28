@@ -11,7 +11,8 @@
 .aside .nav li a.active,
 .aside .copyright-text a,
 .about .about-content .about-text p strong,
-.about .about-content .about-text h3 span{
+.about .about-content .about-text h3 span,
+.service .service-item .service-item-inner .icon .fa{
     color: #ec1839;
 }
 .aside .nav-toggler span,
@@ -23,7 +24,8 @@
 .btn,
 .about .about-content .skills .skill-item .progress .progress-in,
 .about .about-content .timeline .timeline-item::before,
-.about .about-content .timeline .circle-dot
+.about .about-content .timeline .circle-dot,
+.service .service-item .service-item-inner:hover .icon
 {
     background-color: #ec1839;
 }
