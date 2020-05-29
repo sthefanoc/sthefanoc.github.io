@@ -1,0 +1,27 @@
+{
+  "name": "personal_portfolio",
+  "version": "1.0.0",
+  "description": "várias informações relevantes no novo arquivo.",
+  "main": "index.html",
+  "scripts": {
+    "test": "test",
+    "deploy": "gh-pages-deploy",
+    "clean-source": "rimraf README.md src webroot package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sthefanoc/personal-portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "SthefanoC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sthefanoc/personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/sthefanoc/personal-portfolio#readme",
+  "devDependencies": {
+    "gh-pages-deploy": "^0.5.1"
+  }
+}

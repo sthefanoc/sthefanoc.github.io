@@ -32,7 +32,7 @@ input, textarea, select{
     min-height: 100vh;
     display: block;
     background-color: #f2f2fc;
-    position: fixed;
+    /* position: fixed; */
     left: 270px;
     top: 0;
     right: 0;
