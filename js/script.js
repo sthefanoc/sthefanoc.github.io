@@ -75,5 +75,47 @@ lightbox.addEventListener("click", function(event){
     if(event.target === lightboxClose || event.target === lightbox){
         toggleLightbox();
     }
-    // console.log(event.target);
-})  
+})
+
+// Aside navbar
+const nav=document.querySelector('.nav');
+    navList=nav.querySelectorAll('li');
+    totalNavList=navList.length;
+for (let k=0;k<totalNavList;k++){
+    const a=navList[k].querySelector("a");
+    
+    a.addEventListener("click",() => {
+        for(l=0;l<totalNavList;l++){
+            navList[l].querySelector("a").classList.remove("active");
+        }
+        const sectionList=document.querySelectorAll(".section");
+        for(m=0;m<sectionList.length;m++){
+            if(sectionList[m].id === a.href.split("#")[1]){
+                sectionList[m].classList.remove("hidden");
+            } else {
+                sectionList[m].classList.add("hidden");
+            }
+        }
+
+        a.classList.add("active");
+        if(window.innerWidth < 1200){
+            asideSectionTogglerBtn();
+        }
+    })
+}
+
+const navTogglerBtn=document.querySelector(".nav-toggler");
+    aside=document.querySelector(".aside");
+
+navTogglerBtn.addEventListener("click",() => {
+    asideSectionTogglerBtn();
+})
+
+function asideSectionTogglerBtn(){
+    const sectionList=document.querySelectorAll(".section");
+    aside.classList.toggle("open");
+    navTogglerBtn.classList.toggle("open");
+    for(let i=0;i<sectionList.length;i++){
+        sectionList[i].classList.toggle("open");
+    }
+}
