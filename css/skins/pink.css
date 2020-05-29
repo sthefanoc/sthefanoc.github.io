@@ -12,7 +12,11 @@
 .aside .copyright-text a,
 .about .about-content .about-text p strong,
 .about .about-content .about-text h3 span,
-.service .service-item .service-item-inner .icon .fa{
+.service .service-item .service-item-inner .icon .fa,
+.portfolio .portfolio-filter button.active,
+.portfolio .portfolio-item .portfolio-info .icon .fa,
+.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .next-item .fa{
     color: #ec1839;
 }
 .aside .nav-toggler span,
@@ -28,4 +32,8 @@
 .service .service-item .service-item-inner:hover .icon
 {
     background-color: #ec1839;
+}
+
+.portfolio .portfolio-filter button.active{
+    border-color: #ec1839;
 }

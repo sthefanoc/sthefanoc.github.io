@@ -38,7 +38,7 @@
     <!-- Content start -->
     <div class="main-content">
       <!-- Home Section start -->
-      <section class="home section hidden">
+      <section class="home section">
         <div class="container">
           <div class="intro">
             <img src="images/about.png" alt="profile" class="shadow-dark">
@@ -55,7 +55,7 @@
       </section>
       <!-- Home Section end -->
       <!-- About Section start -->
-      <section class="about section hidden">
+      <section class="about section">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -294,11 +294,142 @@
         </div>
       </section>
       <!-- Service Section end -->
+      <!-- Portfolio Section start -->
+      <section class="portfolio section">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portfolio-filter padd-15">
+              <button class="active" type="button" data-filter="all">All</button>
+              <button type="button" data-filter="python">Python</button>
+              <button type="button" data-filter="javascript">Javascript</button>
+              <button type="button" data-filter="reactjs">ReactJS</button>
+              <button type="button" data-filter="react-native">React Native</button>
+            </div>
+          </div>
+          <div class="row portfolio-items">
+            <!-- Portfolio Item start -->
+            <div class="portfolio-item padd-15" data-category="python">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/1.jpg" alt="Project #1">
+                </div>
+                <div class="portfolio-info">
+                  <h4>Project number #1</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item end -->
+            <!-- Portfolio Item start -->
+            <div class="portfolio-item padd-15" data-category="reactjs">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/2.jpg" alt="Project #2">
+                </div>
+                <div class="portfolio-info">
+                  <h4>Another project day</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item end -->
+            <!-- Portfolio Item start -->
+            <div class="portfolio-item padd-15" data-category="javascript">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/3.jpg" alt="Project #3">
+                </div>
+                <div class="portfolio-info">
+                  <h4>Crazy Javascript project</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item end -->
+            <!-- Portfolio Item start -->
+            <div class="portfolio-item padd-15" data-category="python">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/4.jpg" alt="Project #4">
+                </div>
+                <div class="portfolio-info">
+                  <h4>Such pythoh</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item end -->
+            <!-- Portfolio Item start -->
+            <div class="portfolio-item padd-15" data-category="react-native">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/5.jpg" alt="Project #5">
+                </div>
+                <div class="portfolio-info">
+                  <h4>Many programming</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item end -->
+            <!-- Portfolio Item start -->
+            <div class="portfolio-item padd-15" data-category="reactjs">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/6.jpg" alt="Project #6">
+                </div>
+                <div class="portfolio-info">
+                  <h4>WOW</h4>
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio Item end -->
+          </div>
+
+        </div>
+      </section>
+      <!-- Portfolio Section end -->
     </div>
     <!-- Content end -->
   </div>
-  <!-- Mani Container End -->
+  <!-- Main Container End -->
 
+  <!-- Lightbox start -->
+    <div class="lightbox">
+      <div class="lightbox-content">
+        <div class="lightbox-close">&times;</div>
+        <img src="images/portfolio/1.jpg" alt="Name of The Project" class="lightbox-img" onclick="nextItem()">
+        <div class="lightbox-caption">
+          <div class="caption-text">Project # 1</div>
+          <div class="caption-counter">1 of 6</div>
+        </div>
+      </div>
+      <div class="lightbox-controls">
+        <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+        <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+      </div>
+    </div>
+  <!-- Lightbox end -->
+  <!-- Template js -->
+  <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
 
